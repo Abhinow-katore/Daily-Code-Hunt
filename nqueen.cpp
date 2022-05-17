@@ -2,7 +2,6 @@
 #define N 4
 using namespace std;
 
-
 bool safe(int board[N][N], int row, int col){
     int i, j;
     for ( i = 0; i < col; i++)
