@@ -74,6 +74,8 @@ public:
     void addEdge(int v, int w);
     void DFS(int v);
 };
+
+int j;
 void Graph::addEdge(int v, int w)
 {
     adj[v].push_back(w);

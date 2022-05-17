@@ -26,10 +26,14 @@ def solveNQUtil(board, col):
     if col >= N:
         return True
     for i in range(N):
+    
         if isSafe(board, i, col):             
+    
             board[i][col] = 1
             if solveNQUtil(board, col + 1) == True:
                 return True
+    
+
             board[i][col] = 0
     return False
 
