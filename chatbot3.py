@@ -7,7 +7,7 @@ def send():
     txt.insert(END, " You->" + e.get())
     user = e.get().lower()
     if(user=="hi"):
-        txt.insert(END, " "+ "\n Bot->heloo\n")
+        txt.insert(END, " "+ "\nlee Bot->heloo\n")
     e.delete(0,END)
 
 txt = Text(root)

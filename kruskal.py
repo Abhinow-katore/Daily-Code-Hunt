@@ -14,7 +14,7 @@ def union(graph,a,b,ans): # use to connect nodes
     if a == b: # matlab loop ban raha hai
         # return False
         # print("can not connect")
-        pass
+        pass 
     else:
         ans.append([ta,tb])
         if graph[a] == graph[b]:
