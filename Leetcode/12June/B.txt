@@ -1,0 +1,44 @@
+class Solution
+{
+public:
+    int minPathCost(vector<vector<int>> &grid, vector<vector<int>> &moveCost)
+    {
+        int tot = 1000000000;
+        int val[100][100] = {};
+        int lastm = grid.size();
+        int firstn = grid[0].size();
+        int i = 0;
+
+        while (i < lastm)
+        {
+            int j = 0;
+
+            while (j < firstn)
+            {
+                if (i == 0)
+                {
+                    val[i][j] = grid[i][j];
+                }
+                else
+                {
+                    val[i][j] = tot;
+                    for (int w = 0; w < firstn; w++)
+                    {
+                        val[i][j] = min(val[i][j], val[i - 1][w] + grid[i][j] + moveCost[grid[i - 1][w]][j]);
+                    }
+                }
+                j++;
+            }
+            i++;
+        }
+
+        int sub = tot;
+        int t = 0;
+        while (t < firstn)
+        {
+            sub = min(sub, val[lastm - 1][t]);
+            t++;
+        }
+        return sub;
+    }
+};
