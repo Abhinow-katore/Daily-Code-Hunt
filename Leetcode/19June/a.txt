@@ -1,0 +1,19 @@
+class Solution
+{
+public:
+    string greatestLetter(string s)
+    {
+        // sort(s.begin(), s.sort());
+        sort(s.begin(), s.end());
+        for (int i = 0; i < s.length(); i++)
+        {
+            if (s[i] == s[i + 1])
+            {
+                if((isupper(s[i])&& islower(s[i+1])||(isupper(s[i+1])&&islower[i]))){
+                    return isupper(s[i]);
+                }
+            }
+        }
+        return "";
+    }
+};
