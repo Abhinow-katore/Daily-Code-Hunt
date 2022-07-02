@@ -1,0 +1,22 @@
+class Solution
+{
+public:
+    int maxArea(int h, int w, vector<int> &horizontalCuts, vector<int> &verticalCuts)
+    {
+        int posH1 = horizontalCuts[0];
+        int posH2 = horizontalCuts[horizontalCuts.size()-1] - horizontalCuts[horizontalCuts.size()-2] ;
+        int posV1 = verticalCuts[0];
+        int posV2 = verticalCuts[verticalCuts.size() - 1] - verticalCuts[verticalCuts.size() - 2];
+
+        int diffMax = 0;
+        for (int i = 0; i < horizontalCuts.size() - 1; i++)
+        {
+            diff = max(horizontalCuts[i] - horizontalCuts[i + 1], diff);
+        }
+        cout << diff;
+        return 0;
+    }
+};
+
+// 2 4 =?
+// 2*3
