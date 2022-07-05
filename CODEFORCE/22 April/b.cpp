@@ -31,6 +31,30 @@ int main()
             cout << "NO"
                  << "\n";
 
+            // 2 + 3 = 5
+            // a = 4
+            // b = 5
+            // 4+5 
+            // a+b 
+            // 9
+            int a = 5;
+            int b = 4;
+            int c= a+b ;
+            cout<<c;
+            for (int i = 0; i < n; i++)
+            {
+                c  = c + b ; 
+            }
+            // cout<<c; 
+            // int string bool float double long long 
+            // array stack queue deque vector 
+            // as much thaili you can use here
+            // 
+            
+            
+
+
     }
+
     return 0;
 }         
