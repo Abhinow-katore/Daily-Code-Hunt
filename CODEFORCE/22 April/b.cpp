@@ -15,6 +15,8 @@ int main()
         {
             int val;
             cin >> val;
+
+            // int
             vec.push_back(val);
         }
         int sub = 0;
@@ -28,7 +30,7 @@ int main()
         else
             cout << "NO"
                  << "\n";
-    }
 
+    }
     return 0;
-}
+}         

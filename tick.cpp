@@ -76,7 +76,7 @@
 //     else if (square[2] == square[5] && square[5] == square[8])
 //         return 1;
 //     else if (square[3] == square[6] && square[6] == square[9])
-//         return 1;
+//         return 1;  
 //     else if (square[1] == square[5] && square[5] == square[9])
 //         return 1;
 //     else if (square[3] == square[5] && square[5] == square[7])
